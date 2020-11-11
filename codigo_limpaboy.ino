@@ -44,34 +44,34 @@ void loop()
   int distanciaEsquerda = 0;
   delay(50);
 
-  if (distancia <= 20)
+  if (distancia <= 20)      // Se a distancia medida for menor que 20cm o robô faz essas ações 
   {
-    movParar();
+    movParar();             // Para
     delay(300);
-    movTras();
+    movTras();              // Move para trás
     delay(1800);
-    movParar();
+    movParar();             // Para
     delay(300);
-    distanciaDireita = olharDireita();
+    distanciaDireita = olharDireita();    // Olha para diretia
     delay(300);
-    distanciaEsquerda = olharEsquerda();
+    distanciaEsquerda = olharEsquerda();  // Olha para esquerda
     delay(300);
 
-    if (distanciaDireita >= distanciaEsquerda)
+    if (distanciaDireita >= distanciaEsquerda)  // Se a distancia medida na direita for maior que a da esquerda
     {
-      virarDireita();
+      virarDireita();      // Virar Limpaboy para direita
       delay(900);
       movParar();
     }
     else
     {
-      virarEsquerda();
+      virarEsquerda();     // Virar Limpaboy para esquerda
       delay(900);
       movParar();
     }
   
   }
-  else
+  else        // Caso a medida não seja menor que 20cm, o robô continua a andar para frente
   {
     movFrente(); 
   }
