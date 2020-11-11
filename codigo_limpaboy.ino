@@ -49,7 +49,7 @@ void loop()
     movParar();
     delay(300);
     movTras();
-    delay(400);
+    delay(1800);
     movParar();
     delay(300);
     distanciaDireita = olharDireita();
