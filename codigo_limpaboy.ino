@@ -99,7 +99,7 @@ int olharEsquerda()      // Gira o servo para esquerda
   return distancia;
 }
 
-int lerPing()      // Read Ping Function for Ultrasonic Sensor.
+int lerPing()      // Função que lê a distancia medida no sensor ultrassônico
 {
   delay(100);                 // Espera 100ms para cada ping
   int cm = sonar.ping_cm();   // Envia ping e recebe a distancia em cm
