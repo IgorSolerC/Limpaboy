@@ -7,12 +7,12 @@ const int motorEsquerdaTras = 5;
 const int motorDireitaFrente = 6;
 const int motorDireitaTras = 7;
 
-#define TRIGGER_PIN  A1
-#define ECHO_PIN     A2
-#define MAX_DISTANCE 250 Distancia maxima para pingar
+#define TRIGGER_PINO  A1
+#define ECHO_PINO     A2
+#define MAX_DISTANCIA 250 Distancia maxima para pingar
 
 Servo servo_motor;  // Nome do servo
-NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE);
+NewPing sonar(TRIGGER_PINO, ECHO_PINO, MAX_DISTANCIA);
 
 boolean goesForward = false;
 int distancia = 100;
