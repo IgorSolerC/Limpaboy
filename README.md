@@ -1,2 +1,2 @@
 # Limpaboy
-Código utilizado no projeto Limpaboy: Robô autônomo de desinfecção.
+Código utilizado para o projeto Limpaboy: Robô autônomo de desinfecção.
